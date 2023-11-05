@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.image-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Adjust the column width as needed */
+  gap: 16px; /* Adjust the gap between items as needed */
+  justify-items: center;
+}
+
+.image-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Style for images */
+.image-list img {
+  width: 100%; /* Take up 100% of the container width */
+  height: auto;
+}
+
+.image-container{
+  width: 450px; /* Set the desired width for the container */
+  height: 500px; /* Set the desired height for the container */
+  overflow: hidden; /* Ensure that images within the container don't overflow */
+  position: relative;
+}
